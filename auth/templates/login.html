@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teachSystem</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="/auth/static/assets1/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/auth/static/assets1/css/form-elements.css">
+        <link rel="stylesheet" href="/auth/static/assets1/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="/auth/static/assets1/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/auth/static/assets1/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/auth/static/assets1/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/auth/static/assets1/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/auth/static/assets1/ico/apple-touch-icon-57-precomposed.png">
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+
+        <style type="text/css">
+        body{
+            background-image: url(/auth/static/assets/images/bg.jpg);
+            background-size:100%;
+        }
+        a{
+            text-decoration:none;
+        }
+        </style>
+
+
+</head>
+<body>
+<div id="index">
+    <form method="post" name="loginForm">
+    <h1 align="center" style="color: white; font-size: 70px; position: fixed; top:10%;left: 40%">敏捷教学平台</h1>
+
+
+
+        	<div class="modal-dialog" style="position:fixed; top: 25%; left: 35%">
+        		<div class="modal-content">
+
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">用户登入</h3>
+        				<p>Fill in the form below to get instant access:</p>
+        			</div>
+
+
+
+        			<div class="modal-body">
+
+	                    <form role="form-login" action="" method="post" class="registration-form" name="form-login">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="form-first-name">用户名</label>
+	                        	<input type="text" name="username" placeholder="用户名" class="form-first-name form-control" id="username">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-last-name">密码</label>
+	                        	<input type="password" name="password" placeholder="密码" class="form-last-name form-control" id="password">
+	                        </div>
+	                        <div>
+                                <input type="radio" name="user_type" value="student" checked="true" align="center">学生
+                                <input type="radio" name="user_type" value="teacher" align="center">教师
+                            </div>
+
+
+
+	                              <button type="submit"  class="btn" name="signon">登入</button>
+                        </form>
+                        <a href="{{ url_for('auth.register_student') }}">学生注册</a>
+                        <a href="{{ url_for('auth.register_teacher') }}">教师注册</a>
+        			</div>
+
+
+        		</div>
+        	</div>
+
+
+
+    <!--<table align="center">
+        <tr>
+            <td colspan="2" align="center"><h2 align="center">用户登录</h2></td>
+        </tr>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username" value=""/></td>
+        </tr>
+        <tr>
+            <td>密&nbsp&nbsp&nbsp码：</td>
+            <td><input type="password" name="password" value=""/></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="radio" name="user_type" value="student" checked="true" align="center">学生
+                <input type="radio" name="user_type" value="teacher" align="center">教师
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="signon" value="登录" align="center"/></td>
+        </tr>
+    </table>-->
+
+
+    <br>
+    <br>
+
+
+
+
+
+
+    {% for message in get_flashed_messages() %}
+        <font color="red">{{ message }}</font>
+    {% endfor %}
+    </form>
+
+</div>
+
+</body>
+</html>

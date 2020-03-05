@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teachSystem</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="/auth/static/assets1/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/auth/static/assets1/css/form-elements.css">
+        <link rel="stylesheet" href="/auth/static/assets1/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="/auth/static/assets1/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/auth/static/assets1/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/auth/static/assets1/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/auth/static/assets1/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/auth/static/assets1/ico/apple-touch-icon-57-precomposed.png">
+
+
+
+
+
+    <script type="text/javascript" src="/auth/static/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/auth/static/teachSystem.js"></script>
+
+
+
+     <style type="text/css">
+        body{
+            background-image: url(/auth/static/assets/images/bg.jpg);
+            background-size:100%;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        </style>
+</head>
+<body>
+<div id="index">
+
+
+
+            	<div class="modal-dialog">
+        		<div class="modal-content">
+
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">学生注册</h3>
+        				<p>Fill in the form below to get instant access:</p>
+        			</div>
+
+        			<div class="modal-body">
+
+
+
+	                    <form role="form" action="" method="post" class="registration-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="form-first-name">用户名</label>
+	                        	<input type="text" name="username" id="username_input" onblur="StuUsernameIsExist()" placeholder="用户名..." class="form-first-name form-control"  name="username" >
+	                        </div>
+
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-last-name">密码</label>
+	                        	<input type="text" name="password" onblur="passwordIsValid()" placeholder="密码..." class="form-last-name form-control" id="form-last-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-email">确认密码</label>
+	                        	<input type="text" name="repeatedPassword" onblur="passwordIsSame()" placeholder="确认密码..." class="form-email form-control" id="form-email">
+	                        </div>
+
+							<div class="form-group">
+	                        	<label class="sr-only" for="form-last-name">电话</label>
+	                        	<input type="text" name="telephone" placeholder="电话..." class="form-last-name form-control" id="form-last-name">
+	                        </div>
+
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-email">邮箱</label>
+	                        	<input type="text" name="email" onblur="emailIsValid()" placeholder="邮箱..." class="form-email form-control" id="form-email">
+	                        </div>
+
+                             <div class="form-group">
+	                        	<label class="sr-only" for="form-email">班级</label>
+	                        	<input type="text" name="classroom" placeholder="班级..." class="form-email form-control" id="form-email">
+	                        </div>
+
+	                        <button type="submit" class="btn"  name="newAccount" value="保存" onclick="checkAllRegisterForm()">注册</button>
+	                    </form>
+        			</div>
+        		</div>
+        	</div>
+
+
+    <!--
+    <form method="post" name="register_form">
+        <h2>用户注册</h2>
+        <h3>基本信息</h3>
+        <table>
+            <tr>
+                <td>用户名:</td>
+                <td>
+                    <input type="text" name="username" id="username_input" onblur="StuUsernameIsExist()"/>
+                    <div id="usernameMsg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>新密码:</td>
+                <td>
+                    <input type="password" name="password" onblur="passwordIsValid()"/>
+                    <div id="passwordMsg"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码:</td>
+                <td>
+                    <input type="password" name="repeatedPassword" onblur="passwordIsSame()"/>
+                    <div id="repeatedPasswordMsg"></div>
+                </td>
+            </tr>
+        </table>
+        <h3>账户信息</h3>
+        <table>
+            <tr>
+                <td>电话:</td>
+                <td>
+                    <input type="text" name="telephone" size="40" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>电子邮箱:</td>
+                <td>
+                    <input type="text" name="email" size="40" value="" onblur="emailIsValid()"/>
+                    <div id="emailMsg"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>班级ID:</td>
+                <td>
+                    <input type="text" name="classroom" size="40" value="">
+                    <div id="classroomMsg"></div>
+                </td>
+            </tr>
+        </table>
+        {% for message in get_flashed_messages() %}
+            {{ message }}
+        {% endfor %}
+        <input type="submit" name="newAccount" value="保存" onclick="checkAllRegisterForm()">
+    </form>
+    -->
+
+</div>
+</body>

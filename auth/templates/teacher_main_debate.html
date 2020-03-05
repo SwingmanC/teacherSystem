@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+    <title>teachSystem</title>
+
+    <link rel="favicon" href="/auth/static/assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/auth/static/assets/css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="/auth/static/assets/css/style.css">
+	<script src="/auth/static/assets/js/html5shiv.js"></script>
+	<script src="/auth/static/assets/js/respond.min.js"></script>
+
+    <style type="text/css">
+        body{
+            background-image: url(/auth/static/assets/images/bg.jpg);
+            background-size:100%;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+
+     <div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav" style="position: fixed; left: 35%;top:3%">
+					<li><a href="catalogue.html">教师主页</a></li>
+                    <li><a href="comment.html">修改信息</a></li>
+					<li><a href="data.html">课程信息</a></li>
+                    <li><a href="data.html">添加课程</a></li>
+                    <li  class="active"><a href="comment.html">评论区</a></li>
+                    <li><a href="homework.html">发布评论</a></li>
+                    <li><a href="comment.html">作业浏览</a></li>
+                    <li><a href="comment.html">视频播放</a></li>
+                    <li><a href="comment.html">视频管理</a></li>
+                    <li><a href="comment.html">ppt管理</a></li>
+                    <li><a href="comment.html">作业管理</a></li>
+
+				</ul>
+			</div>
+
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+
+
+<div style="position: fixed; height:75%;  width:60%; top:20%; left:20%;  border: solid 8px #a0a0a0;background-image: url(/auth/static/assets/images/bb.jpg);" >
+
+<div id="header" style="position:fixed;  left:42%;">
+    <h1 class="title" style="font-size: 45px" >敏捷教学平台</h1>
+    <label class="user_info" style="font-size: 20px">Hi! {{ teacher.username }} <a href="{{ url_for('auth.index') }}" style="font-size: 20px" >切换用户</a></label>
+</div>
+
+
+<div style="position: fixed; left: 25%; top:35%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+<div id="nav" style="position:relative;  left:20%; top:25%">
+    <a href="{{ url_for('auth.main_teacher',teacher_username=teacher.username) }}" style="font-size: 20px">>查看所教课程</a><br>
+    <a href="{{ url_for('auth.add_course',teacher_username=teacher.username) }}" style="font-size: 20px">>添加课程</a><br>
+    <a href="{{ url_for('auth.update_teacher',teacher_username=teacher.username) }}" style="font-size: 20px">>修改个人信息</a><br>
+</div>
+
+<div style="position: fixed; left: 25%; top:50%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+
+<div id="Catalog" style="position:relative;  left:20%; top:31%">
+    <div id="top">
+        <a href="{{ url_for('auth.teacher_course',teacher_username=teacher.username,course_id=course.id) }}">课程主页面</a>
+        <a href="{{ url_for('auth.manage_course_ppt',teacher_username=teacher.username,course_id=course.id) }}">上传ppt</a>
+        <a href="{{ url_for('auth.manage_course_film',teacher_username=teacher.username,course_id=course.id) }}">上传视频</a>
+        <a href="{{ url_for('auth.manage_course_homework',teacher_username=teacher.username,course_id=course.id) }}">上传作业</a>
+        <a href="{{ url_for('auth.teacher_debate',teacher_username=teacher.username,course_id=course.id) }}">课程讨论区</a>
+    </div>
+    <div id="main">
+        <div id="main_debate">
+            <div id="debate_title">
+                <h3>{{ debate.title }}</h3>
+                <span id="count">
+                    评论数:{{ debate.discuss_count }}
+                </span>
+            </div>
+            <br>
+            <div id="debate_info">
+                {{ teacher.username }}
+                <font color="#a9a9a9">{{ debate.time }}</font>
+            </div>
+        </div>
+        <div id="main_discuss">
+            <ul>
+                {% for discuss in discusses %}
+                    <li>
+                        <font color="#a9a9a9">{{ discuss.student_name }}</font><br>
+                        {{ discuss.text }}<br>
+                        <font color="#a9a9a9">{{ discuss.time }}</font>
+                        <span id="count">
+                            <font color="#a9a9a9">点赞数:{{ discuss.good_count }}</font>
+                        </span>
+                    </li>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer" style="position:fixed;  left:45%; top:90%">
+    Copyright@ 老师说的都队
+</div>
+</div>
+</body>
+</html>

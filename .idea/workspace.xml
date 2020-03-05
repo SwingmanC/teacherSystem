@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/auth/templates/login.html" line="41" mnemonic="1" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da3fca0b-d794-47b6-9589-031b5d818044" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/nibaba/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/nibaba/app.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/teachSystem1$teachSystem.coverage" NAME="teachSystem1 Coverage Results" MODIFIED="1559732456375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/teachSystem$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1555317947241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/teachSystem$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1555318058833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/teachSystem$teachSystem.coverage" NAME="teachSystem Coverage Results" MODIFIED="1557333136448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/register_student.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_ppt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_homework.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_film.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/main_teacher.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/main_student.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="135" selection-start-line="59" selection-start-column="135" selection-end-line="59" selection-end-column="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/student_hand_in_homework.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auth/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/templates/add_course.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>registerForm</find>
+      <find>query_course</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>register_form</replace>
+      <replace>teacher_course</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nibaba" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/auth/templates/hand_in_homework.html" />
+        <option value="$PROJECT_DIR$/domain/results.py" />
+        <option value="$PROJECT_DIR$/auth/templates/query_course.html" />
+        <option value="$PROJECT_DIR$/domain/classroom.py" />
+        <option value="$PROJECT_DIR$/domain/course.py" />
+        <option value="$PROJECT_DIR$/domain/ppts.py" />
+        <option value="$PROJECT_DIR$/domain/homework.py" />
+        <option value="$PROJECT_DIR$/domain/films.py" />
+        <option value="$PROJECT_DIR$/domain/student.py" />
+        <option value="$PROJECT_DIR$/domain/discuss.py" />
+        <option value="$PROJECT_DIR$/auth/templates/student_discuss.html" />
+        <option value="$PROJECT_DIR$/auth/templates/teacher_discuss.html" />
+        <option value="$PROJECT_DIR$/domain/debate.py" />
+        <option value="$PROJECT_DIR$/auth/static/teachSystem.css" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/domain/good.py" />
+        <option value="$PROJECT_DIR$/auth/static/teachSystem.js" />
+        <option value="$PROJECT_DIR$/login/main/about.html" />
+        <option value="$PROJECT_DIR$/login/main/courses/math/course_math.html" />
+        <option value="$PROJECT_DIR$/login/main/courses/math/homework.html" />
+        <option value="$PROJECT_DIR$/login/main/index.html" />
+        <option value="$PROJECT_DIR$/login/main/courses/math/comment.html" />
+        <option value="$PROJECT_DIR$/login/main/portfolio.html" />
+        <option value="$PROJECT_DIR$/login/main/courses.html" />
+        <option value="$PROJECT_DIR$/login/main/fees.html" />
+        <option value="$PROJECT_DIR$/login/main/courses/math/data.html" />
+        <option value="$PROJECT_DIR$/login/main/courses/math/catalogue.html" />
+        <option value="$PROJECT_DIR$/login/index.html" />
+        <option value="$PROJECT_DIR$/auth/views.py" />
+        <option value="$PROJECT_DIR$/auth/templates/register_student.html" />
+        <option value="$PROJECT_DIR$/auth/templates/register_teacher.html" />
+        <option value="$PROJECT_DIR$/auth/templates/update_student.html" />
+        <option value="$PROJECT_DIR$/auth/templates/update_teacher.html" />
+        <option value="$PROJECT_DIR$/auth/templates/teacher_main_debate.html" />
+        <option value="$PROJECT_DIR$/auth/templates/teacher_debate.html" />
+        <option value="$PROJECT_DIR$/auth/templates/teacher_course.html" />
+        <option value="$PROJECT_DIR$/auth/templates/tea_watch_film.html" />
+        <option value="$PROJECT_DIR$/auth/templates/tea_examine_homework.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_watch_film.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_main_debate.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_homework.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_hand_in_homework.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_debate.html" />
+        <option value="$PROJECT_DIR$/auth/templates/student_course.html" />
+        <option value="$PROJECT_DIR$/auth/templates/manage_course_ppt.html" />
+        <option value="$PROJECT_DIR$/auth/templates/manage_course_homework.html" />
+        <option value="$PROJECT_DIR$/auth/templates/manage_course_film.html" />
+        <option value="$PROJECT_DIR$/auth/templates/main_teacher.html" />
+        <option value="$PROJECT_DIR$/auth/templates/main_student.html" />
+        <option value="$PROJECT_DIR$/auth/templates/add_course.html" />
+        <option value="$PROJECT_DIR$/auth/templates/login.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-50" />
+    <option name="y" value="5" />
+    <option name="width" value="1040" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="teachSystem1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teachSystem1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teachSystem1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teachSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teachSystem1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teachSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Desktop\teachSystem\templates" />
+      <recent name="F:\Desktop\teachSystem\templates\auth" />
+      <recent name="F:\Desktop\teachSystem\domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\teachSystem1\auth\static" />
+      <recent name="F:\Desktop\teachSystem\auth" />
+      <recent name="F:\Desktop\teachSystem\auth\templates" />
+      <recent name="D:\PycharmProjects\teachSystem\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.teachSystem1">
+    <configuration name="index" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teachSystem1/auth/index" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teachSystem1/auth/templates/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="main_student.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teachSystem1/auth/templates/main_student.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="student_watch_film.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teachSystem1/auth/templates/student_watch_film.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="update_student.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teachSystem1/auth/templates/update_student.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="teachSystem1" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="teachSystem" />
+      <option name="target" value="D:\PycharmProjects\teachSystem1\app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.teachSystem1" />
+      <item itemvalue="JavaScript Debug.student_watch_film.html" />
+      <item itemvalue="JavaScript Debug.index" />
+      <item itemvalue="JavaScript Debug.main_student.html" />
+      <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="JavaScript Debug.update_student.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.update_student.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.main_student.html" />
+        <item itemvalue="JavaScript Debug.index" />
+        <item itemvalue="JavaScript Debug.student_watch_film.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da3fca0b-d794-47b6-9589-031b5d818044" name="Default Changelist" comment="" />
+      <created>1554108363580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554108363580</updated>
+      <workItem from="1554108445042" duration="9039000" />
+      <workItem from="1554203136416" duration="15786000" />
+      <workItem from="1554346147247" duration="2484000" />
+      <workItem from="1554377619504" duration="699000" />
+      <workItem from="1554626180823" duration="6328000" />
+      <workItem from="1554801377018" duration="598000" />
+      <workItem from="1554820728269" duration="5944000" />
+      <workItem from="1554898038866" duration="7914000" />
+      <workItem from="1554993053213" duration="6759000" />
+      <workItem from="1555140638998" duration="5805000" />
+      <workItem from="1555244110038" duration="257000" />
+      <workItem from="1555303778215" duration="3796000" />
+      <workItem from="1555318194086" duration="14054000" />
+      <workItem from="1555404635600" duration="10888000" />
+      <workItem from="1555760485152" duration="3029000" />
+      <workItem from="1555763604354" duration="265000" />
+      <workItem from="1556120998106" duration="2615000" />
+      <workItem from="1556200871462" duration="7699000" />
+      <workItem from="1556333284402" duration="15569000" />
+      <workItem from="1556544491803" duration="7334000" />
+      <workItem from="1556891341502" duration="5402000" />
+      <workItem from="1557133167103" duration="7271000" />
+      <workItem from="1557314150395" duration="13154000" />
+      <workItem from="1557379344792" duration="520000" />
+      <workItem from="1557380117163" duration="2295000" />
+      <workItem from="1557408651562" duration="638000" />
+      <workItem from="1557409297775" duration="2796000" />
+      <workItem from="1557412549072" duration="5600000" />
+      <workItem from="1557496748039" duration="4442000" />
+      <workItem from="1557501210932" duration="3665000" />
+      <workItem from="1557505102836" duration="24000" />
+      <workItem from="1557505294140" duration="73000" />
+      <workItem from="1557505741430" duration="756000" />
+      <workItem from="1557506614822" duration="580000" />
+      <workItem from="1557507335743" duration="315000" />
+      <workItem from="1559314099264" duration="9229000" />
+      <workItem from="1559379650063" duration="7886000" />
+      <workItem from="1559656722821" duration="8409000" />
+      <workItem from="1559728703092" duration="3872000" />
+      <workItem from="1568082391833" duration="677000" />
+      <workItem from="1570687109564" duration="150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="204616000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17091152" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930844" weight="0.23371105" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.194051" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006916" side_tool="true" weight="0.3184282" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.39235127" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22117962" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930844" weight="0.39518413" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.194051" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006916" side_tool="true" weight="0.3184282" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.39235127" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/isotope.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/bootstrap-theme.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/form-elements.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/da-slider.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/assets/css/font-awesome.min.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/comment.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/fees.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/portfolio.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/homework.html" />
+    <entry file="file://$PROJECT_DIR$/login/.idea/form-1.iml" />
+    <entry file="file://$PROJECT_DIR$/auth/static/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/index.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/index.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/catalogue.html" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses/math/data.html" />
+    <entry file="file://$PROJECT_DIR$/auth/templates/assets/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/auth/templates/assets/css/bootstrap-theme.css" />
+    <entry file="file://$PROJECT_DIR$/login/main/courses.html" />
+    <entry file="file://$PROJECT_DIR$/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teachsystem.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/static/teachSystem.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="134" column="1" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/static/assets1/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/static/teachSystem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/update_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="65" column="135" selection-start-line="65" selection-start-column="135" selection-end-line="65" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/update_teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/teacher_main_debate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="61" column="134" selection-start-line="61" selection-start-column="134" selection-end-line="61" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/teacher_debate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/teacher_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/tea_watch_film.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="61" column="134" selection-start-line="61" selection-start-column="134" selection-end-line="61" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/tea_examine_homework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_watch_film.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="56" column="135" selection-start-line="56" selection-start-column="135" selection-end-line="56" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_main_debate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="57" column="135" selection-start-line="57" selection-start-column="135" selection-end-line="57" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_homework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_debate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="59" column="135" selection-start-line="59" selection-start-column="135" selection-end-line="59" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="135" selection-start-line="57" selection-start-column="135" selection-end-line="57" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/register_teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/register_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_ppt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_homework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/manage_course_film.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/main_teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="134" selection-start-line="60" selection-start-column="134" selection-end-line="60" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/main_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="135" selection-start-line="59" selection-start-column="135" selection-end-line="59" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/student_hand_in_homework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/templates/add_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

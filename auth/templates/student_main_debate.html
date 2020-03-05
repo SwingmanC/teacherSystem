@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teachSystem</title>
+
+
+    <link rel="favicon" href="/auth/static/assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/auth/static/assets/css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="/auth/static/assets/css/style.css">
+	<script src="/auth/static/assets/js/html5shiv.js"></script>
+	<script src="/auth/static/assets/js/respond.min.js"></script>
+
+    <style type="text/css">
+        body{
+            background-image: url(/auth/static/assets/images/bg.jpg);
+            background-size:100%;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse">
+     <div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav">
+					<li><a href="catalogue.html">个人主页</a></li>
+                    <li><a href="comment.html">修改信息</a></li>
+					<li><a href="data.html">课程信息</a></li>
+                    <li><a href="comment.html">评论区</a></li>
+                    <li  class="active"><a href="homework.html">发布评论</a></li>
+                    <li><a href="comment.html">作业浏览</a></li>
+                    <li><a href="comment.html">作业提交</a></li>
+                    <li><a href="comment.html">视频播放</a></li>
+				</ul>
+			</div>
+
+			<!--/.nav-collapse -->
+		</div>
+</div>
+ <div style="position: fixed; height:75%;  width:60%; top:20%; left:20%;  border: solid 8px #a0a0a0;background-image: url(/auth/static/assets/images/bb.jpg);" >
+
+ <div style="position: fixed; left: 25%; top:35%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+<div id="header" style="position:relative;  left:23%;">
+    <h1 class="title" style="font-size: 45px;position: relative; left: 15%">敏捷教学平台</h1>
+    <label class="user_info" style="font-size: 20px">Hi! {{ student.username }}</label>
+    <label class="user_info" style="font-size: 20px">所属班级:{{ student.classroom.name }}</label>
+    <a href="{{ url_for('auth.index') }}"style="font-size: 20px">切换用户</a>
+</div>
+
+
+<div id="nav" style="position:fixed; top:37%; left:48%;">
+    <a href="{{ url_for('auth.main_student',student_username=student.username) }}" style="font-size: 20px">查看课程</a><br>
+    <a href="{{ url_for('auth.update_student',student_username=student.username) }}" style="font-size: 20px">修改个人信息</a><br>
+</div>
+
+<div style="position: fixed; left: 25%; top:45%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+
+<div id="Catalog" style="position:fixed; left:43%; top: 48%">
+    <div id="top">
+        <a href="{{ url_for('auth.student_course',student_username=student.username,course_id=course.id) }}"  style="font-size: 20px">课程主页面</a>
+        <a href="{{ url_for('auth.student_homework',student_username=student.username,course_id=course.id) }}"  style="font-size: 20px">上交作业</a>
+        <a href="{{ url_for('auth.student_debate',student_username=student.username,course_id=course.id) }}"  style="font-size: 20px">课程讨论区</a>
+    </div>
+    <div id="main"  style="position: fixed; left: 35%; top:55%">
+        <div id="main_debate">
+            <div id="debate_title">
+                <h4>{{ debate.title }}</h4>
+                <span id="count">
+                    评论数:{{ debate.discuss_count }}
+                </span>
+            </div>
+            <div id="debate_info">
+                {{ teacher.username }}
+                <font color="#a9a9a9">{{ debate.time }}</font>
+            </div>
+        </div>
+        <div id="send_discuss" >
+            <textarea id="discuss_input" cols="30" rows="10"></textarea>
+            <a href="#" id="discuss_submit" onclick="addDiscuss('{{ student.username }}',{{ debate.id }})">发送评论</a>
+            <div id="tip"></div>
+            {% for message in get_flashed_messages() %}
+                {{ message }}
+            {% endfor %}
+        </div>
+
+
+        <div id="main_discuss" style="position: fixed; left: 55%; top:55%">
+            <ul>
+                {% for discuss in discusses %}
+                    <li>
+                        <font color="#a9a9a9">{{ discuss.student_name }}</font><br>
+                        {{ discuss.text }}<br>
+                        <font color="#a9a9a9">{{ discuss.time }}</font>
+                        <span id="count">
+                            <font color="#a9a9a9" id="good_count"><a href="" onclick="clickGood('{{ student.username }}',{{ discuss.id }})">点赞:</a>{{ discuss.good_count }}</font>
+                            <div id="tip"></div>
+                        </span>
+                    </li>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer" style="position:fixed;  left:45%; top:90%">
+    Copyright@ 老师说的都队
+</div>
+</div>
+</body>
+</html>
+<script>
+    function addDiscuss(a,b) {
+        $.ajax({
+        async:true,
+        type:'get',
+        url:'/auth/add_discuss',
+        data:{
+            'text':$('#discuss_input').val(),
+            'student_username':a,
+            'debate_id':b
+        },
+        dataType:'json',
+        cache:false,
+        success:function (data) {
+            if (data === ''){}
+            else if (data === 'null')
+            {
+                $('#tip').val('<font color=\'red\'>评论内容不可为空</font>');
+            }
+            else
+            {
+                var $discuss_li = $('<li> <font color="#a9a9a9">'+data['student_name']+'</font><br>'+data['text']+'<br><font color="#a9a9a9">'+data['time']+'</font> <span id="count"> <font color="#a9a9a9"><a href="">点赞:</a>'+data['good_count']+'</font></span></li>');
+                $('ul').append($discuss_li);
+            }
+        },
+        error:function () {
+
+        }
+    });
+    }
+    function clickGood(student_username,discuss_id) {
+    $.ajax({
+        async:true,
+        type:'get',
+        url:'/auth/click_good',
+        data:{
+            'student_username':student_username,
+            'discuss_id':discuss_id
+        },
+        dataType:'json',
+        cache:false,
+        success:function (data) {
+            if(data === 'exist')
+            {
+                $('#tip').val('<font color="red">您已点过赞</font>')
+            }
+            else if(data === 'fail') {}
+            else{
+                 $('#good_count').val('<a href="#" onclick="">点赞:</a>'+data+'')
+            }
+        },
+        error:function () {
+
+        }
+    });
+}
+</script>

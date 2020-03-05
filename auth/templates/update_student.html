@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/auth/static/teachSystem.js"></script>
+
+    <link rel="favicon" href="/auth/static/assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/auth/static/assets/css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="/auth/static/assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="/auth/static/assets/css/style.css">
+	<script src="/auth/static/assets/js/html5shiv.js"></script>
+	<script src="/auth/static/assets/js/respond.min.js"></script>
+
+    <style type="text/css">
+        body{
+            background-image: url(/auth/static/assets/images/bg.jpg);
+            background-size:100%;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav">
+					<li><a href="catalogue.html">个人主页</a></li>
+                    <li class="active"><a href="comment.html">修改信息</a></li>
+					<li><a href="data.html">课程信息</a></li>
+                    <li><a href="comment.html">评论区</a></li>
+                    <li><a href="homework.html">发布评论</a></li>
+                    <li><a href="comment.html">作业浏览</a></li>
+                    <li><a href="comment.html">作业提交</a></li>
+                    <li><a href="comment.html">视频播放</a></li>
+				</ul>
+			</div>
+
+			<!--/.nav-collapse -->
+		</div>
+</div>
+
+
+
+
+
+
+ <div style="position: fixed; height:75%;  width:60%; top:20%; left:20%;  border: solid 8px #a0a0a0;background-image: url(/auth/static/assets/images/bb.jpg);" >
+
+ <div style="position: fixed; left: 25%; top:35%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+<div id="header" style="position:relative;  left:23%;">
+    <h1 class="title" style="font-size: 45px;position: relative; left: 15%">敏捷教学平台</h1>
+    <label class="user_info" style="font-size: 20px">Hi! {{ student.username }}</label>
+    <label class="user_info" style="font-size: 20px">所属班级:{{ student.classroom.name }}</label>
+    <a href="{{ url_for('auth.index') }}"style="font-size: 20px">切换用户</a>
+</div>
+
+
+<div id="nav" style="position:fixed; top:37%; left:35%;">
+    <a href="{{ url_for('auth.main_student',student_username=student.username) }}" style="font-size: 20px">查看课程</a><br>
+    <a href="{{ url_for('auth.update_student',student_username=student.username) }}" style="font-size: 20px">修改个人信息</a><br>
+</div>
+
+<div style="position: fixed; left: 25%; top:45%; width:50%; height: 3px; background: #c3c3c3"></div>
+
+
+<div id="Catalog" style="position:relative;  left:25%;top: 15%">
+    <form method="post" name="registerForm">
+        <h3>个人信息修改</h3>
+        <h4>基本信息</h4>
+        <table>
+            <tr>
+                <td>用户名:</td>
+                <td>{{ student.username }}</td>
+            </tr>
+            <tr>
+                <td>新密码:</td>
+                <td>
+                    <input type="password" name="password" value="{{ student.password }}" onblur="passwordIsValid()"/>
+                    <div id="passwordMsg"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码:</td>
+                <td>
+                    <input type="password" name="repeatedPassword" value="{{ student.password }}" onblur="passwordIsSame()"/>
+                    <div id="repeatedPasswordMsg"></div>
+                </td>
+            </tr>
+        </table>
+        <h4>账户信息</h4>
+        <table>
+            <tr>
+                <td>电话:</td>
+                <td>
+                    <input type="text" name="telephone" size="40" value="{{ student.telephone }}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>电子邮箱:</td>
+                <td>
+                    <input type="text" name="email" size="40" value="{{ student.email }}" onblur="emailIsValid()"/>
+                    <div id="emailMsg"></div>
+                </td>
+            </tr>
+        </table>
+        {% for message in get_flashed_messages() %}
+            {{ message }}
+        {% endfor %}
+        <input type="submit" name="newAccount" value="保存" onclick="checkAllRegisterForm()">
+    </form>
+</div>
+<div id="footer" style="position:fixed;  left:45%; top:90%">
+    Copyright@ 老师说的都队
+</div>
+</div>
+</body>
+</html>
